@@ -1,0 +1,7 @@
+{
+  "triggers": [
+    {
+      "projects": "auto-npm-publish"
+    }
+  ]
+}

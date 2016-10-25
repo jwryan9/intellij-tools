@@ -1,0 +1,842 @@
+<templates>
+    <template name="$" value="import $ from 'jquery';" description="require('jquery')" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="$5" value="$ = require('jquery')$END$" description="require('jquery')" toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="&amp;" value="ampersand-$VAR$ = require('ampersand-$VAR$')$END$" description="require ampersand" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="+" value="' + $END$ + '" description="Add variable to string" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="ae" value="afterEach(() =&gt; {&#10;    $END$         &#10;});" description="after each es6" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="ae5" value="afterEach(function () {&#10;    $END$         &#10;});" description="afterEach()" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="anon" value="() =&gt; {$END$}" description="anon for es6" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="anon5" value="function () {$END$}$PUNC$" description="annon func" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="PUNC" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="args" value="let args = $method$.getCall(0).args;&#10;expect(args[0]).to.equal($arg1$);$end$" description="get args" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="method" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="arg1" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="ase" value="expect($VAR1$).to.equal($VAR2$);" description="assert equals" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="VAR2" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="asyncr" value="import async from 'async';" description="async require" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="bb" value="Backbone = require('backbone')$END$" description="require backbone" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="be" value="beforeEach(() =&gt; {&#10;    $END$         &#10;});" description="before each for es6" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="be5" value="beforeEach(function () {&#10;    $END$         &#10;});" description="beforeEach()" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="beoff" value="Backbone.Events.off($END$);" description="Backbone.Events.off" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="beon" value="Backbone.Events.on($END$);" description="Backbone.Events.on" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="bet" value="Backbone.Events.trigger($END$);" description="Backbone.Events.trigger" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="boom" value="import boom from 'boom';" description="boom import" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="caf" value="common.any.float();$END$" description="Any float for better tests" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="cai" value="common.any.integer();$END$" description="Any integer for better tests" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="cas" value="common.any.string();$END$" description="Any String for better tests" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="cdate" value="chance.date()$END$" description="chance date" toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="cfloat" value="chance.floating({min: $min$, max: $max$})$END$" description="common any float" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="min" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="max" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="cfloatold" value="common.any.float($min$, $max$)$END$" description="common float old" toReformat="false" toShortenFQNames="true">
+        <variable name="min" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="max" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="chance" value="import Chance from 'chance';&#10;var chance = new Chance();" description="chance require" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="chance5" value="Chance = require('chance'),&#10;chance = new Chance();" description="chance require" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="cint" value="chance.integer({min: $min$, max: $max$})$END$" description="common.any.integer" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="min" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="max" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="cintold" value="common.any.integer($min$, $max$)$END$" description="common any int old" toReformat="false" toShortenFQNames="true">
+        <variable name="min" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="max" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="cjs" value="module.exports = {&#10;    $END$    &#10;};&#10;" description="cjs for es6" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="cjs5" value="'use strict';&#10;&#10;module.exports = {&#10;    $END$    &#10;};&#10;" description="commonJS Module" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="cjsfunction" value="module.exports = () =&gt; {&#10;    $end$&#10;};&#10;" description="cjs function" toReformat="true" toShortenFQNames="true">
+        <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="cjstest" value="import $serviceUnderTest$ from '$path$';&#10;import chai, {expect} from 'chai';&#10;&#10;describe('$serviceUnderTest$', () =&gt; {&#10;    it('should $firstTestHere$', () =&gt; {&#10;        expect(true).to.equal(false);&#10;    });&#10;});&#10;" description="cjstest6" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="serviceUnderTest" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="path" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="firstTestHere" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="cjstest5" value="'use strict';&#10;&#10;var $serviceUnderTest$ = require('$path$'),&#10;&#10;    chai = require('chai'),&#10;    expect = chai.expect;&#10;&#10;describe('$serviceUnderTest$', function () {&#10;    it('should $firstTestHere$', function () {&#10;        expect(true).to.equal(false);&#10;    });&#10;});&#10;" description="common js test" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="serviceUnderTest" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="path" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="firstTestHere" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="cjstestsinon" value="import $name$ from '../src/$name$';&#10;&#10;import sinon from 'sinon';&#10;import sinonChai from 'sinon-chai';&#10;import chai, {expect} from 'chai';&#10;&#10;import _ from 'lodash';&#10;import {common} from 'deere-ui-test-utils';&#10;&#10;describe('$name$', () =&gt; {&#10;    var sandbox;&#10;&#10;    before(() =&gt; {&#10;        chai.use(sinonChai);&#10;    });&#10;&#10;    beforeEach(() =&gt; {&#10;        sandbox = sinon.sandbox.create();&#10;        &#10;        $end$&#10;    });&#10;&#10;    afterEach(() =&gt; {&#10;        sandbox.restore();&#10;    });&#10;&#10;    it('should do something', () =&gt; {&#10;        &#10;    });&#10;&#10;});&#10;" description="cjs test with sinon" toReformat="true" toShortenFQNames="true">
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="cjstestsinonproxy" value="var $name$;&#10;&#10;import sinon from 'sinon';&#10;import sinonChai from 'sinon-chai';&#10;import chai, {expect} from 'chai';&#10;&#10;import proxyquire from 'proxyquire';&#10;&#10;import {common} from 'deere-ui-test-utils';&#10;import _ from 'lodash';&#10;&#10;describe('$name$', () =&gt; {&#10;    let sandbox;&#10;&#10;    before(() =&gt; {&#10;        chai.use(sinonChai);&#10;    });&#10;&#10;    beforeEach(() =&gt; {&#10;        sandbox = sinon.sandbox.create();&#10;&#10;        sandbox.stub($end$);&#10;&#10;        $name$ = proxyquire('../../../src/$name$', {&#10;            &#10;        });&#10;    });&#10;&#10;    afterEach(() =&gt; {&#10;        sandbox.restore();&#10;    });&#10;&#10;&#10;    describe('when $name$ing', () =&gt; {&#10;        beforeEach(() =&gt; {&#10;            $name$();&#10;        });&#10;&#10;        it('should $doSomething$', () =&gt; {&#10;            expect(true).to.equal(false);&#10;        });&#10;    });&#10;});&#10;" description="cjs test with sinon and proxyquire" toReformat="true" toShortenFQNames="true">
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="doSomething" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="cl" value="console.log('$VAR1$: ' + $VAR1$);" description="Console Log" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="cldir" value="console.dir(&quot;$VAR1$:&quot; + $VAR1$);" description="console log dir" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="cls" value="console.log('$VAR1$: ' + JSON.stringify($VAR1$));" description="console log stringify" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="common" value="import {common} from 'deere-ui-test-utils';" description="common for es6" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="common5" value="common = require('deere-ui-test-utils').common," description="common" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="controller" value="import $some$ from '../../src/services/$some$';&#10;import _ from 'lodash';&#10;&#10;module.exports = {&#10;    endpoints: [{&#10;        method: '$method$',&#10;        path: '$path$',&#10;        config: {&#10;            auth: 'session',&#10;            handler: (request, reply) =&gt; {&#10;                $some$.$doSomething$(request.params.pathVar, (err, result) =&gt; {&#10;                    reply(JSON.stringify(result));&#10;                });&#10;            }&#10;        }&#10;    }]&#10;};&#10;" description="server-core controller for endpoint" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="some" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="method" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="path" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="doSomething" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="controllertest" value="import $some$Controller from '../../../src/controllers/$some$';&#10;import $some$Service from '../../../src/services/$some$';&#10;&#10;import {common} from 'deere-ui-test-utils';&#10;import sinon from 'sinon';&#10;import sinonChai from 'sinon-chai';&#10;import chai, {expect} from 'chai';&#10;&#10;describe('$some$Controller', () =&gt; {&#10;    var sandbox,&#10;        $route$Route,&#10;        fakeRequest,&#10;        fakeReply,&#10;        userId;&#10;&#10;    function createFakeRequest(userId, pathVar) {&#10;        return {&#10;            auth: {&#10;                credentials: {&#10;                    id: userId&#10;                }&#10;            },&#10;            params: {&#10;                pathVar: pathVar&#10;            }&#10;        };&#10;    }&#10;&#10;    before(function () {&#10;        chai.use(sinonChai);&#10;    });&#10;&#10;    beforeEach(function () {&#10;        userId = common.any.string();&#10;        sandbox = sinon.sandbox.create();&#10;        $route$Route = $some$Controller.endpoints[0];&#10;    });&#10;&#10;    afterEach(function () {&#10;        sandbox.restore();&#10;    });&#10;&#10;    describe('Routes', () =&gt; {&#10;        it('should have correct routes', () =&gt; {&#10;            expect($some$Controller.endpoints).to.have.length(1);&#10;            expect($route$Route).to.have.property('method', '$method$');&#10;            expect($route$Route).to.have.property('path', '$path$');&#10;        });&#10;&#10;        it('should configure the authentication strategy', function () {&#10;            expect($route$Route.config).to.have.property('auth', 'session');&#10;        });&#10;    });&#10;&#10;    describe('Getting something', () =&gt; {&#10;        var expected$Stuff$,&#10;            expectedParam;&#10;&#10;        beforeEach(() =&gt; {&#10;            expectedParam = common.any.string();&#10;            fakeRequest = createFakeRequest(userId, expectedParam);&#10;            fakeReply = sandbox.spy();&#10;            &#10;            expected$Stuff$ = common.any.string();&#10;&#10;            sandbox.stub($some$Service, '$doSomething$').yields(null, expected$Stuff$);&#10;            $route$Route.config.handler(fakeRequest, fakeReply);&#10;        });&#10;&#10;        it('should get stuff', function () {&#10;            expect($some$Service.$doSomething$).to.have.callCount(1);&#10;            expect($some$Service.$doSomething$).to.be.calledWith(expectedParam);&#10;&#10;            expect(fakeReply).to.have.callCount(1);&#10;            expect(fakeReply).to.be.calledWith(JSON.stringify(expected$Stuff$));&#10;        });&#10;    });&#10;});&#10;" description="server-core endpoint controller" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="some" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="route" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="method" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="path" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="Stuff" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="doSomething" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="createRequest" value="function createRequest(userId) {&#10;    return {&#10;        auth: {&#10;            credentials: {&#10;                id: userId&#10;            }&#10;        }&#10;    };&#10;}" description="test helper to build the request for happi controllers" toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="cstring" value="chance.string()$END$" description="common.any.string" toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="cstringold" value="common.any.string()$END$" description="common any string" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="cw" value="sinon.assert.calledOnce($VAR$);&#10;sinon.assert.calledWith($VAR$, $END$);" description="calledOn and calledWith" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="cword" value="chande.word()$END$" description="chance word" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="de" value="&#10;describe('$describeTitle$', () =&gt; {&#10;    it('should $should$', () =&gt;{&#10;        $END$&#10;    });&#10;});" description="de for es6" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="describeTitle" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="should" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="de5" value="&#10;describe('$describeTitle$', function () {&#10;    it('should $should$', function () {&#10;        $END$&#10;    });&#10;});" description="Describe" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="describeTitle" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="should" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="defn" value="define([&quot;$MODULE_REF$&quot;], function($MODULE_VAR$) {&#10;$END$&#10;});" description="Inserts define() expression" toReformat="true" toShortenFQNames="true">
+        <variable name="MODULE_REF" expression="complete()" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+        <variable name="MODULE_VAR" expression="jsDefineParameter(MODULE_REF)" defaultValue="mod" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="disable" value="/*eslint-disable*/" description="disable lint" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="disableLine" value="//eslint-disable-line " description="eslint disable line" toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="enable" value="/*eslint-enable*/" description="enable lint" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="ex" value="expect($VAR1$)" description="expect" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="fail" value="expect('delete me, ').to.equal('im a fake failure you imbecile');" description="Make JS test failure" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="findAll" value="ReactDOM.findDOMNode(renderedNode).querySelectorAll('$VAR1$');" description="react find all elements" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="funk" value="function $NAME$($PARAM$) {&#10;  $END$&#10;}" description="Inserts function expression" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="PARAM" expression="" defaultValue="&quot;&quot;" alwaysStopAt="true" />
+        <context>
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="OTHER" value="true" />
+        </context>
+    </template>
+    <template name="generate" value="function generate$name$() {&#10;    let $name$ = [];&#10;    &#10;    _.times(common.any.integer(2, 10), () =&gt; {&#10;        $name$.push($end$);&#10;    });&#10;    &#10;    return $name$;&#10;}" description="generate data" toReformat="true" toShortenFQNames="true">
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="here" value="console.log('here');" description="Console Log here" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="iife" value="(function () {&#10;    'use strict';&#10;    &#10;}());&#10;" description="IIFE's" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="im" value="import $VAR1$ from '$DEP1$';" description="import" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="DEP1" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="it" value="it('$IT_BLOCK$', () =&gt; {&#10;    $END$&#10;});" description="it for es6" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="IT_BLOCK" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="it5" value="it('$IT_BLOCK$', function () {&#10;    $END$&#10;});" description="it block for testing." toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="IT_BLOCK" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="itm" value="&#10;it('should have `$var$`', function () {&#10;    expect(model.$var$).to.equal($var$);&#10;});$END$" description="Ampersand Model Test" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="jsstep" value="'use strict';&#10;&#10;var World = require('../support/world').World;&#10;&#10;module.exports = function () {&#10;    this.World = World;&#10;&#10;    /*eslint-disable new-cap*/&#10;    this.$GWT$(/^$REGEX$$/, function (callback) {&#10;        $END$&#10;        callback();&#10;    });&#10;    /*eslint-enable new-cap*/&#10;};&#10;" description="java script step definition" toReformat="false" toShortenFQNames="true">
+        <variable name="GWT" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="REGEX" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="lo" value="import _ from 'lodash';" description="lo for es6" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="lo5" value="_ = require('lodash')$END$" description="require lodash" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="mapme" value="var $VAR1$ = $VAR2$.map(($VAR3$) =&gt; {&#10;        $END$&#10;    )};" description="es6 map (iteration)" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="VAR2" expression="jsArrayVariable()" defaultValue="jsArrayVariable()" alwaysStopAt="false" />
+        <variable name="VAR3" expression="jsSuggestVariableName(VAR2)" defaultValue="" alwaysStopAt="false" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="me" value="module.exports =$END$" description="module.exports" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+            <option name="OTHER" value="true" />
+        </context>
+    </template>
+    <template name="proxy" value="$VAR1$ = proxyquire('$CLASS_UNDER_TEST$', {&#10;    '$DEP_TO_REQUIRE$': $STUBBED_INSTANCE_OF_DEP$&#10;}); " description="proxyquire" toReformat="true" toShortenFQNames="true">
+        <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="CLASS_UNDER_TEST" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="DEP_TO_REQUIRE" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="STUBBED_INSTANCE_OF_DEP" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="proxyr" value="import proxyquire from 'proxyquire';" description="proxyquire require" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="qs" value="querySelector('.$END$')" description="querySelector" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="qsa" value="querySelectorAll('.$END$')" description="querySelectorAll" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="scryclass" value="let $CLASSES_VAR$ = ReactTestUtils.scryRenderedDOMComponentsWithClass($ELEMENT$, $CLASS$),&#10;    $CLASS_VAR$;&#10;&#10;expect($CLASSES_VAR$).to.have.length($LENGTH$);&#10;&#10;$CLASS_VAR$ = ReactDOM.findDOMNode($CLASSES_VAR$[0]);&#10;&#10;$END$" description="Insert React utils class scry for testing" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="CLASSES_VAR" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="ELEMENT" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="CLASS" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="CLASS_VAR" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="LENGTH" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="scrytag" value="let $TAGS_VAR$ = ReactTestUtils.scryRenderedDOMComponentsWithTag($ELEMENT$, $TAG$),&#10;    $TAG_VAR$;&#10;&#10;expect($TAGS_VAR$).to.have.length($LENGTH$);&#10;&#10;$TAG_VAR$ = ReactDOM.findDOMNode($TAGS_VAR$[0]);&#10;&#10;$END$" description="Insert React utils tag scry for testing" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="TAGS_VAR" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="ELEMENT" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="TAG" expression="capitalize(String)" defaultValue="" alwaysStopAt="true" />
+        <variable name="TAG_VAR" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="LENGTH" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="scrytype" value="let $TYPES_VAR$ = ReactTestUtils.scryRenderedComponentsWithType($ELEMENT$, $TYPE$),&#10;    $TYPE_VAR$;&#10;&#10;expect($TYPES_VAR$).to.have.length($LENGTH$);&#10;&#10;$TYPE_VAR$ = ReactDOM.findDOMNode($TYPES_VAR$[0]);&#10;&#10;$END$" description="Insert React utils type scry for testing" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="TYPES_VAR" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="TYPE_VAR" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="ELEMENT" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="LENGTH" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="sinonr" value="import sinon from 'sinon';&#10;import sinonChai from 'sinon-chai';&#10;import chai, {expect} from 'chai';" description="sinonr for es6" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="sinonr5" value="sinon = require('sinon'),&#10;sinonChai = require('sinon-chai'),&#10;chai = require('chai'),&#10;expect = chai.expect$END$" description="sinon requires" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="sinonsetup" value="var sandbox;&#10;&#10;before(() =&gt; {&#10;    chai.use(sinonChai);&#10;});&#10;&#10;beforeEach(() =&gt; {&#10;    sandbox = sinon.sandbox.create();&#10;});&#10;&#10;afterEach(() =&gt; {&#10;    sandbox.restore();&#10;});" description="sinonsetup for es6" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="sinonsetup5" value="before(function () {&#10;    chai.use(sinonChai);&#10;});&#10;&#10;beforeEach(function () {&#10;    sandbox = sinon.sandbox.create();&#10;});&#10;&#10;afterEach(function () {&#10;    sandbox.restore();&#10;});" description="before after for sandbox" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="sorted" value="chai.use(require('chai-sorted'));" description="chai sorted plugin" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="spec" value="describe('$TESTNAME$ Tests', function () {&#10;    'use strict';&#10;$END$&#10;    var sinon = require('sinon'),&#10;        expect = require('chai').expect,&#10;        common = require('deere-ui-test-utils').common,&#10;&#10;        $ = require('jquery'),&#10;&#10;        Backbone = require('backbone'),&#10;        BaseView = require('../lib/BaseView'),&#10;        events = require('../lib/events'),&#10;&#10;        $NAME$Instance,&#10;        $INSTANCE$ = require('../lib/$INSTANCE$'),&#10;        &#10;        expectedViewOptions,&#10;&#10;        sandbox;&#10;&#10;    function generateDummyData() {&#10;    }&#10;&#10;    function createView(defaultViewOptions) {&#10;        return new $INSTANCE$(defaultViewOptions);&#10;    }&#10;&#10;    function getDefaultViewOptions() {&#10;    }&#10;&#10;    function createStubs() {&#10;        sandbox.stub(BaseView.prototype, 'addChildView');&#10;    }&#10;&#10;    beforeEach(function () {&#10;        sandbox = sinon.sandbox.create();&#10;&#10;        generateDummyData();&#10;&#10;        createStubs();&#10;&#10;        expectedViewOptions = getDefaultViewOptions();&#10;&#10;        $NAME$Instance = createView(expectedViewOptions);&#10;&#10;        $('body').append($NAME$Instance.el);&#10;    });&#10;&#10;    afterEach(function () {&#10;        $NAME$Instance = null;&#10;&#10;        sandbox.restore();&#10;&#10;        $('body').empty();&#10;    });&#10;&#10;    describe('Instantiation', function () {&#10;        it('should create an instance as expected', function () {&#10;            expect($NAME$Instance).to.be.an.instanceof(BaseView);&#10;            expect($NAME$Instance.className).to.equal('class-name');&#10;        });&#10;        &#10;        it('should create instance as a div', function () {&#10;            expect($NAME$Instance.tagName).to.equal('div');&#10;        });&#10;    });&#10;});" description="Create JavaScript Spec file." toReformat="false" toShortenFQNames="true">
+        <variable name="TESTNAME" expression="capitalize(String)" defaultValue="fileNameWithoutExtension()" alwaysStopAt="true" />
+        <variable name="NAME" expression="" defaultValue="decapitalize(TESTNAME)" alwaysStopAt="false" />
+        <variable name="INSTANCE" expression="" defaultValue="capitalize(TESTNAME)" alwaysStopAt="false" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+        </context>
+    </template>
+    <template name="tbe" value=".to.equal($VAR1$);" description="to be equal" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="tbnew" value=".to.be.calledWithNew; // eslint-disable-line no-unused-expressions" description="to be called with new" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="tbs" value=".to.be.sorted()" description="to be sorted with chai" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="thl" value=".to.have.length($END$);" description="to have length assertion" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="times" value="_.times(common.any.integer(2,10), (index) =&gt; {&#10;    $end$&#10;});" description="for loop using _.times" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="us" value="'use strict';&#10;$END$" description="Inserts 'use strict' statement" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <context>
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="verify" value="expect($VAR1$).to.have.callCount(1);&#10;expect($VAR1$).to.be.calledWithExactly($END$);" description="verify call" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="verifynew" value="expect($VAR1$).to.be.calledWithNew; // eslint-disable-line no-unused-expressions&#10;expect($VAR1$).to.be.calledWithExactly($END$);" description="verify with called new" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="waterfallStub" value="function stubFixForAsyncWaterfall() {&#10;    sandbox.stub(async, 'setImmediate', function (callback) {&#10;        callback();&#10;    });&#10;}" description="build water fall stub fix" toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="ce" value="React.createElement($elementName$, {&#10;    $END$&#10;});" description="React.createElement" toReformat="false" toShortenFQNames="true">
+        <variable name="elementName" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="R" value="React = require('react')$END$" description="require React" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="RC" value="import React from 'react';&#10;&#10;export default React.createClass({&#10;    componentDidMount() {&#10;        require('../sass/$sassFileName$.scss$END$');&#10;    },&#10;&#10;    render() {       &#10;        return (&#10;            &lt;$elementType$ className=&quot;$className$&quot;&gt;&lt;/$elementType$&gt;&#10;        );&#10;    }&#10;});&#10;" description="React Component" toReformat="false" toShortenFQNames="true">
+        <variable name="sassFileName" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="elementType" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="className" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="RC5" value="'use strict';&#10;&#10;var React = require('react');&#10;&#10;module.exports = React.createClass({&#10;    componentDidMount: function () {&#10;        require('../sass/$sassFileName$.scss$END$');&#10;    },&#10;&#10;    render: function () {       &#10;        return (&#10;            &lt;$elementType$ className=&quot;$className$&quot;&gt;&lt;/$elementType$&gt;&#10;        );&#10;    }&#10;});&#10;" description="react component for es5 and react &lt; 0.14" toReformat="false" toShortenFQNames="true">
+        <variable name="sassFileName" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="elementType" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="className" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="RT" value="import $ComponentName$ from '../../src/$ComponentPath$.js$END$';&#10;&#10;import React from 'react';&#10;import ReactDOM from 'react-dom';&#10;import ReactTestUtils from 'react/lib/ReactTestUtils';&#10;import utils from 'deere-ui-test-utils';&#10;import chai, {expect} from 'chai';&#10;&#10;describe('$ComponentName$', () =&gt; {&#10;    let componentElement,&#10;        renderedElement,&#10;        renderedNode;&#10;&#10;    function renderComponent(props) {&#10;        componentElement = React.createElement($ComponentName$, props);&#10;        renderedElement = ReactTestUtils.renderIntoDocument(componentElement);&#10;        renderedNode = ReactDOM.findDOMNode(renderedElement);&#10;    }&#10;    &#10;    beforeEach(() =&gt; {&#10;        renderComponent({});&#10;    });&#10;&#10;    describe('Composition', () =&gt; {&#10;        it('should include the styles', () =&gt; {&#10;            let sassFilePath = '../../sass/$ComponentPath$.scss';&#10;    &#10;            expect(utils.require.hasBeenRequired(require.resolve(sassFilePath))).to.equal(true);&#10;    &#10;            utils.require.reset();&#10;        });&#10;    &#10;        it('should have a root DOM element', () =&gt; {&#10;            expect(renderedNode.tagName).to.equal('$tagName$');&#10;            expect(renderedNode.className).to.equal('$ComponentPath$');&#10;        });&#10;    });&#10;});&#10;" description="React Component Test" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+        <variable name="ComponentName" expression="capitalize(underscoresToCamelCase(snakeCase(fileNameWithoutExtension)))" defaultValue="" alwaysStopAt="true" />
+        <variable name="ComponentPath" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+        <variable name="tagName" expression="" defaultValue="DIV" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="RT5" value="'use strict';&#10;&#10;var $ComponentName$ = require('../../lib/$ComponentPath$.jsx$END$'),&#10;&#10;    React = require('react'),&#10;    ReactTestUtils = require('react/lib/ReactTestUtils'),&#10;&#10;    utils = require('deere-ui-test-utils'),&#10;&#10;    expect = require('chai').expect;&#10;&#10;describe('$ComponentName$', function () {&#10;    var componentElement,&#10;&#10;        renderedElement,&#10;        renderedNode;&#10;&#10;    beforeEach(function () {&#10;        componentElement = React.createElement($ComponentName$);&#10;&#10;        renderedElement = ReactTestUtils.renderIntoDocument(componentElement);&#10;&#10;        renderedNode = React.findDOMNode(renderedElement);&#10;    });&#10;&#10;    describe('Composition', function () {&#10;        it('should include the styles', function () {&#10;            var sassFilePath = '../../sass/$ComponentPath$.scss';&#10;    &#10;            expect(utils.require.hasBeenRequired(require.resolve(sassFilePath))).to.equal(true);&#10;    &#10;            utils.require.reset();&#10;        });&#10;    &#10;        it('should have a root DOM element', function () {&#10;            expect(renderedNode.tagName).to.equal('$tagName$');&#10;            expect(renderedNode.className).to.equal('$ComponentPath$');&#10;        });&#10;    });&#10;});&#10;" description="React Test template for es5 and react &lt; 0.14" toReformat="false" toShortenFQNames="true">
+        <variable name="ComponentName" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="ComponentPath" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="tagName" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="RTP" value="var div;&#10;&#10;function renderIntoParentDiv(props) {&#10;    componentElement = React.createElement($RENDERED_VIEW$, props);&#10;    renderedElement = React.render(componentElement, div);&#10;}&#10;&#10;before(function () {&#10;    div = document.createElement('div');&#10;});&#10;&#10;beforeEach(function () {&#10;    var props = {$PROPS$},&#10;        newProps = {$PROPS$};&#10;    &#10;    renderIntoParentDiv(props);&#9;&#10;    renderIntoParentDiv(newProps);&#10;});" description="Test setup for React Props rerendering" toReformat="true" toShortenFQNames="true">
+        <variable name="RENDERED_VIEW" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="PROPS" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JSX_HTML" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+        </context>
+    </template>
+    <template name="RTU" value="ReactTestUtils = require('react/lib/ReactTestUtils')$END$" description="React Test Utils" toReformat="true" toShortenFQNames="true">
+        <context>
+            <option name="JAVA_SCRIPT" value="true" />
+            <option name="JS_EXPRESSION" value="true" />
+            <option name="JS_STATEMENT" value="true" />
+            <option name="OTHER" value="true" />
+        </context>
+    </template>
+</templates>

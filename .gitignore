@@ -1,0 +1,9 @@
+.DS_Store
+templates/.DS_Store
+.idea
+documentor/node_modules
+documentor/npm-debug.log
+node_modules
+.DS_Store
+templates/.DS_Store
+
