@@ -15,7 +15,6 @@ function runAnyInstallsIfNeeded() {
 
 function init(args) {
     setLogLevel(LOG_LEVEL.ERR);
-    ensureOnVpn();
     argumentReader.read(args);
 }
 
