@@ -1,14 +1,25 @@
 alias bench="cd ${benchPath}"
 
+alias live="cd ${benchPath}intellij-live-templates"
+alias ealiases="vim ${benchPath}intellij-live-templates/scripts/bash_aliases.sh"
+
 alias bpa="bench && cd boilerplate/boilerplate-app"
 alias bpu="bench && cd boilerplate/boilerplate-ui-core"
 alias bps="bench && cd boilerplate/boilerplate-server-core"
+
+alias pos="bench && cd wizbros-pos"
+alias lauriei="bench && cd wiz-myhouse-api"
+alias lauriea="bench && cd wiz-myhouse"
+alias garagea="bench && cd wiz-garage"
+alias garagei="bench && cd wiz-garage-api"
 
 alias npml="npm list --depth=0"
 alias master="git checkout master"
 alias newb="git checkout -b"
 alias push="git push -u origin"
 
+alias sprofile="source ~/.bash_profile"
+alias eprofile="vim ~/.bash_profile"
 
 function documentAliases() {
     echo "---------------------------------------------"
