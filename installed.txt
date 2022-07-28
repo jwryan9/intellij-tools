@@ -1,0 +1,11 @@
+Key Promoter X
+cat.dcat.jbplug.mactabbing
+com.chrisrm.idea.MaterialThemeUI
+com.github.copilot
+com.intellij.lang.jsgraphql
+com.intellij.plugins.macoskeymap
+com.mallowigi
+com.nekofar.milad.intellij.nextjs
+mobi.hsz.idea.gitignore
+ru.adelf.idea.dotenv
+zielu.gittoolbox
